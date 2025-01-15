@@ -59,11 +59,11 @@ ax1.tick_params(axis='y')
 
 ax2 = ax1.twinx()  # instantiate a second Axes that shares the same x-axis
 color = 'tab:blue'
-ax2.set_ylabel('Median Wage',color='red')  # we already handled the x-label with ax1
+ax2.set_ylabel('Median Wage',color='red')
 ax2.plot(counties, avg_wage, color='red')
 ax2.tick_params(axis='y')
 
-fig.tight_layout()  # otherwise the right y-label is slightly clipped
+fig.tight_layout()
 plt.show()
 
         
